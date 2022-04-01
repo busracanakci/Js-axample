@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="flex flex-row">
+       <div class="basis-1/4 md:basis-1/3 md:m-4 bg-gray-200">
+         <!--Basit bir form uygulaması-->
+         <h2 class="text-2xl text-lime-600 md:m-6">Form Denemesi</h2>
+         <div>
+           <section>
+             <form id="registerForm">
+               <div class="md:m-8">
+                 <div class="md:m-4">
+                   <p class="text-gray-500 text-xl"> Ad Soyad</p>
+                   <input type="text" name="name" class="w-full md:h-10 bg-gray-300 focus:bg-white">
+                 </div>
+
+                 <div class="md:m-4">
+                   <p class="text-gray-500 text-xl"> Mail Adresi</p>
+                   <input type="text" name="mail" class="w-full md:h-10 bg-gray-300 focus:bg-white">
+                 </div>
+                 <div class="md:m-4">
+                   <p class="text-gray-500 text-xl"> Şifre</p>
+                   <input type="text" name="sifre" class="w-full md:h-10 bg-gray-300 focus:bg-white">
+                 </div>
+                 <div class="md:m-4">
+                   <p class="text-gray-500 text-xl"> Seçenek</p>
+                   <select name="secenek" class="w-full md:h-10 bg-gray-300 focus:bg-white">
+                     <option>Seçenek-1</option>
+                     <option>Seçenek-2</option>
+                     <option>Seçenek-3</option>
+                     <option>Seçenek-4</option>
+                   </select>
+                 </div>
+                 <div class="md:m-4">
+                   <p class="text-gray-500 text-xl md:mb-1"> Checkbox Denemesi</p>
+                   <input name="check1" type="checkbox"> Checkbox denemesi-1
+                   <input name="check2" type="checkbox"> Checkbox denemesi-2
+                 </div>
+                 <div class="md:m-4">
+                   <input class="w-full md:h-10 bg-lime-600 text-white text-xl hover:bg-lime-700" type="submit" name="" value="GÖNDER">
+                 </div>
+                 <div>
+                   <p id="snc" class="text-white text-xl"></p>
+                 </div>
+               </div>
+             </form>
+           </section>
+         </div>
+       </div>
+       <div class="basis-1/4 md:basis-1/3 md:m-4 bg-blue-200">
+         <!--Kullanıcının girdiği iki sayı ile dört işlem yapılabilecek uygulama-->
+         <h2 class="text-blue-500 text-2xl md:m-6">Dört İşlem Denemesi</h2>
+         <div class="md:m-8 md:mx-10 ">
+           <input class="md:w-48 md:m-1 md:h-10 bg-blue-300 " id="sayi1" placeholder=" 1.sayı" type="text" name="" value="">
+           <input class="md:w-48 md:m-1 md:h-10 bg-blue-300" id="sayi2" placeholder=" 2.sayı" type="text" name="" value="">
+         </div>
+         <div class="md:m-9 mx-22 ">
+           <button class="bg-sky-400 hover:bg-sky-700 text-2xl text-white rounded-xl md:m-1 h-8 w-24" id="toplam" type="button" name="button">+</button>
+           <button class="bg-sky-400 hover:bg-sky-700 text-2xl text-white rounded-xl md:m-1 h-8 w-24" id="fark" type="button" name="button">-</button>
+           <button class="bg-sky-400 hover:bg-sky-700 text-2xl text-white rounded-xl md:m-1 h-8 w-24" id="carp" type="button" name="button">*</button>
+           <button class="bg-sky-400 hover:bg-sky-700 text-2xl text-white rounded-xl md:m-1 h-8 w-24" id="bol" type="button" name="button">/</button>
+         </div>
+         <div class="md:m-12">
+           <p class="text-gray-500 text-2xl" id="sonuc"></p>
+         </div>
+       </div>
+       <div class="basis-1/2 md:basis-1/3 md:m-4 bg-yellow-200">
+         <!--Kullanıcının görev oluşturup silebildiği basit bir uygulama-->
+         <h2 class="text-2xl md:m-6 text-yellow-600">To Do List Denemesi</h2>
+         <div class="md:p-8">
+           <input id="yenigorev" class="md:h-8 md:w-64 bg-lime-100 focus:bg-white" placeholder="Yeni Görev Ekleyin" type="text">
+           <button id="ekle" class="bg-lime-600 text-white md:h-8 md:w-32 rounded-xl">+</button>
+         </div>
+         <div class="md:p-8">
+           <table id="liste" class="text-center table-auto border-collapse w-full">
+             <thead>
+               <tr class="text-white bg-lime-300 border border-lime-600">
+                   <th>GÖREV</th>
+                   <th>GÖREVi SİL</th>
+              </tr>
+             </thead>
+           </table>
+         </div>
+       </div>
+    </div>
+    <div class="flex md:m-8 place-content-around">
+      <div class="w-1/3">
+        <input type="submit" class="w-32 md:w-72 mx-2 bg-orange-500 text-orange-100 md:h-12" onclick="location.href='index.html'" value="1.Sayfaya Geç">
+      </div>
+      <div class="w-1/3">
+        <input type="submit" class="w-32 md:w-72 mx-2 bg-orange-500 text-orange-100 md:h-12" onclick="location.href='javascript2.html'" value="2.Sayfaya Geç">
+      </div>
+      <div class="w-1/3">
+        <input type="submit" class="w-32 md:w-72 mx-2 bg-orange-500 text-orange-100 md:h-12" onclick="location.href='javascript3.html'" value="3.Sayfaya Geç">
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

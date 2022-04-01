@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="bg-gray-300">
+    <div>
+      <!--Fotma girilen bilgileri ekrana yazdıran form uygulaması-->
+      <h2 class="text-2xl text-gray-600 md:m-8">Form Denemesi</h2>
+      <div class="md:m-8">
+        <form class="md:m-4" id="form1">
+          <input class="bg-gray-100 md:h-10 md:m-4 w-full" placeholder=" Adınız" id="isim" type="text">
+          <input class="bg-gray-100 md:h-10 md:m-4 w-full" placeholder=" Soyadınız" id="soyisim" type="text">
+          <input class="bg-gray-100 md:h-10 md:m-4 w-full" placeholder=" Yaşınız" id="yas" type="number">
+          <input class="bg-gray-100 md:h-10 md:m-4 w-full" placeholder=" Mail Adresiniz" id="email" type="text">
+          <button id="kaydet" class="bg-gray-500 text-white font-bold">Kaydet</button>
+        </form>
+        
+      </div>
+      <div >
+        <p id="f1"></p>
+        <p id="f2"></p>
+        <p id="f3"></p>
+        <p id="f4"></p>
+        
+      </div>
+    </div>
+    <div class="flex flex-auto md:m-8 place-content-around">
+      <div class="w-1/3">
+        <input type="submit" class="w-32 md:w-72 mx-2 bg-orange-500 text-orange-100 md:h-12" onclick="location.href='index.html'" value="1.Sayfaya Geç">
+      </div>
+      <div class="w-1/3">
+        <input type="submit" class="w-32 md:w-72 mx-2 bg-orange-500 text-orange-100 md:h-12" onclick="location.href='javascript2.html'" value="3.Sayfaya Geç">
+      </div>
+      <div class="w-1/3">
+        <input type="submit" class="w-32 md:w-72 mx-2 bg-orange-500 text-orange-100 md:h-12" onclick="location.href='javascript3.html'" value="3.Sayfaya Geç">
+      </div>
+    </div>
+    <script src="./script3.js" ></script>
+  </body>
+</html>
